@@ -1,0 +1,255 @@
+{
+	"route": {
+		"en-GB": "/"
+	},
+	"frontender": "1556281216",
+	"template": "stark/layouts/default.html.twig",
+	"name": {
+		"en-GB": "Homepage"
+	},
+	"description": {
+		"en-GB": "The main landigpage"
+	},
+	"page_config": {
+		"seo": {
+			"label": {
+				"en-GB": "SEO"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "Stark – A skeleton project for Frontender"
+					},
+					"label": {
+						"en-GB": "Page title"
+					},
+					"control": "core/text",
+					"type": "text"
+				},
+				"meta_description": {
+					"value": {
+						"en-GB": "Stark – A skeleton project for Frontender"
+					},
+					"label": {
+						"en-GB": "Serp Description"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_keywords": {
+					"value": {
+						"en-GB": "Frontender, Frontender Desktop, Frontender Platform, Stark"
+					},
+					"label": {
+						"en-GB": "Serp keywords"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_robots": {
+					"value": "index, follow",
+					"label": {
+						"en-GB": "Indexing"
+					},
+					"control": "core/robots",
+					"type": "text"
+				}
+			}
+		}
+	},
+	"template_config": {
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_class": {
+					"value": "",
+					"label": {
+						"en-GB": "Body class"
+					},
+					"core": "core/text",
+					"type": "hidden"
+				},
+				"theme": {
+					"value": "theme theme--light",
+					"control": "stark/theme"
+				}
+			}
+		}
+	},
+	"containers": [
+		{
+            "frontender": "1556283980",
+	        "template": "stark/containers/footer.html.twig",
+            "name": {
+                "en-GB": "Header"
+            },
+            "description": {
+                "en-GB": "Simple header container"
+            },
+            "template_config": {
+                "links": {
+                    "label": {
+                        "en-GB": "Links"
+                    },
+                    "controls": {
+                        "links": {
+                            "value": [
+                                {
+                                    "label": {
+                                        "en-GB": "Home"
+                                    },
+                                    "page": {
+                                        "en-GB": "/"
+                                    },
+                                    "id": ""
+                                }
+                            ],
+                            "label": {
+                                "en-GB": "Link"
+                            },
+                            "control": "core/route",
+                            "repeatable": "true"
+                        }
+                    }
+                },
+                "config": {
+                    "label": {
+                        "en-GB": "Settings"
+                    },
+                    "controls": {
+                        "container_class": {
+                            "value": "",
+                            "label": {
+                                "en-GB": "Container class"
+                            },
+                            "control": "core/text"
+                        }
+                    }
+                }
+            },
+            "containers": []
+        },
+        {
+            "frontender": "1556284042",
+	        "template": "stark/containers/container/container.html.twig",
+            "name": {
+                "en-GB": "Container"
+            },
+            "description": {
+                "en-GB": "Simple body container"
+            },
+            "template_config": {
+                "content": {
+                    "label": {
+                        "en-GB": "Content"
+                    },
+                    "controls": {
+                        "title": {
+                            "value": {
+                                "en-GB": "A stark contrast"
+                            },
+                            "label": {
+                                "en-GB": "Title"
+                            },
+                            "control": "core/text"
+                        },
+                        "lead": {
+                            "value": {
+                                "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            },
+                            "label": {
+                                "en-GB": "Lead paragraph"
+                            },
+                            "control": "core/markdown"
+                        },
+                        "paragraph": {
+                            "value": [
+                                {
+                                    "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                },
+                                {
+                                    "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                }
+                            ],
+                            "label": {
+                                "en-GB": "Paragraph"
+                            },
+                            "control": "core/markdown",
+                            "minimal": 1,
+                            "repeatable": true
+                        }
+                    }
+                },
+                "config": {
+                    "label": {
+                        "en-GB": "Settings"
+                    },
+                    "controls": {
+                        "show_lead": {
+                            "value": 1,
+                            "label": {
+                                "en-GB": "Display lead paragraph"
+                            },
+                            "control": "core/boolean"
+                        }
+                    }
+                }
+            },
+            "containers": []
+        },
+        {
+            "frontender": "1556284057",
+            "template": "stark/containers/footer.html.twig",
+            "name": {
+                "en-GB": "Footer"
+            },
+            "description": {
+                "en-GB": "Simple footer container"
+            },
+            "template_config": {
+                "content": {
+                    "label": {
+                        "en-GB": "Content"
+                    },
+                    "controls": {
+                        "title": {
+                            "value": {
+                                "en-GB": "Stark Project – A project for Frontender"
+                            },
+                            "label": {
+                                "en-GB": "Title"
+                            },
+                            "control": "core/text"
+                        },
+                        "copyright": {
+                            "value": {
+                                "en-GB": "Feel free to copy and use this template."
+                            },
+                            "label": {
+                                "en-GB": "Lead paragraph"
+                            },
+                            "control": "core/textarea"
+                        }
+                    }
+                },
+                "config": {
+                    "label": {
+                        "en-GB": "Settings"
+                    },
+                    "controls": {
+                        "container_class": {
+                            "value": "",
+                            "label": {
+                                "en-GB": "Container class"
+                            },
+                            "control": "core/text"
+                        }
+                    }
+                }
+            },
+            "containers": []
+        }
+	]
+}
