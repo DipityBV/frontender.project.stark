@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale }}">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% block title %} {% endblock %}
+        {% block meta %} {% endblock %}
+        {% block stylesheets %} {% endblock %}
+        {% block scripts %} {% endblock %}
+
+    </head>
+
+    <body>
+
+        {% for container in containers %}
+            {% include container.template with container %}
+        {% endfor %}
+
+    </body>
+</html>

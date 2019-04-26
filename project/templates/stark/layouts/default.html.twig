@@ -1,0 +1,21 @@
+{% extends 'stark/layouts/base.html.twig' %}
+
+{% block title %}
+    <title>{{ page_config.seo.controls.title.value|t }}</title>
+{% endblock %}
+
+{% block meta %}
+    <meta name="robots" content="{{ page_config.seo.controls.meta_robots.value|default('index,follow')|t }}">
+    {% if page_config.seo.controls.meta_description.value|t is not empty %}
+        <meta name="description" content="{{ page_config.seo.controls.meta_description.value|t }}">
+    {% endif %}
+    {% if page_config.seo.controls.meta_keywords.value|t is not empty %}
+        <meta name="keywords" content="{{ page_config.seo.controls.meta_keywords.value|t }}">
+    {% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
