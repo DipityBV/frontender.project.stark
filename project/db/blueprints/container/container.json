@@ -43,7 +43,7 @@
                         "en-GB": "Paragraph"
                     },
                     "control": "core/markdown",
-                    "minimal": 1,
+                    "at_least": 1,
                     "repeatable": true
                 }
             }
