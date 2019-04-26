@@ -1,0 +1,22 @@
+{
+    "value": "",
+    "label": {
+        "en-GB": "Color theme"
+    },
+    "options": [
+        {
+            "value": "theme theme--light",
+            "label": {
+                "en-GB": "Dark text on light background"
+            }
+        },
+        {
+            "value": "theme theme--dark",
+            "label": {
+                "en-GB": "Light text on dark background"
+            }
+        }
+        
+    ],
+    "control": "core/list"
+}
