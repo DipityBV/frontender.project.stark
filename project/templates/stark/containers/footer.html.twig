@@ -1,3 +1,16 @@
+{#
+    /**
+     * @file
+     * Defaults
+     * @package     Frontender Platform
+     * @subpackage  Stark Project
+     * @author      Babs Gösgens
+     * @license     MIT License
+     * @copyright   Copyright (C) 2014 - 2019 Dipity B.V. All rights reserved.
+     * @link        http://getfrontender.com
+     */
+#}
+
 {% import "macros/template.html.twig" as helper %}
 
 <{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
