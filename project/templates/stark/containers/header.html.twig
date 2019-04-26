@@ -1,0 +1,12 @@
+{% import "macros/template.html.twig" as helper %}
+
+<{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
+    <h1>{{ 'site title'|i18n }}</h1>
+    {% if links.links|length %}
+    <nav>
+        {% for link in links.links %}
+            // Link
+        {% endfor %}
+    <nav>
+    {% endfor %}
+</{{ config.container_tag|default('div') }}>
