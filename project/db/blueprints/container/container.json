@@ -1,0 +1,67 @@
+{
+    "template": "stark/containers/container/container.html.twig",
+    "name": {
+        "en-GB": "Container"
+    },
+    "description": {
+        "en-GB": "Simple body container"
+    },
+    "template_config": {
+        "content": {
+            "label": {
+                "en-GB": "Content"
+            },
+            "controls": {
+                "title": {
+                    "value": {
+                        "en-GB": "A stark contrast"
+                    },
+                    "label": {
+                        "en-GB": "Title"
+                    },
+                    "control": "core/text"
+                },
+                "lead": {
+                    "value": {
+                        "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    "label": {
+                        "en-GB": "Lead paragraph"
+                    },
+                    "control": "core/markdown"
+                },
+                "paragraph": {
+                    "value": [
+                        {
+                            "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        }
+                    ],
+                    "label": {
+                        "en-GB": "Paragraph"
+                    },
+                    "control": "core/markdown",
+                    "minimal": 1,
+                    "repeatable": true
+                }
+            }
+        },
+        "config": {
+            "label": {
+                "en-GB": "Settings"
+            },
+            "controls": {
+                "show_lead": {
+                    "value": 1,
+                    "label": {
+                        "en-GB": "Display lead paragraph"
+                    },
+                    "control": "core/boolean"
+                }
+            }
+        }
+    },
+    "containers": []
+}

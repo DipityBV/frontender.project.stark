@@ -1,34 +1,34 @@
 {
     "template": "stark/containers/footer.html.twig",
     "name": {
-        "en-GB": "Header"
+        "en-GB": "Footer"
     },
     "description": {
-        "en-GB": "Simple header container"
+        "en-GB": "Simple footer container"
     },
     "template_config": {
-        "links": {
+        "content": {
             "label": {
-                "en-GB": "Links"
+                "en-GB": "Content"
             },
             "controls": {
-                "links": {
-                    "value": [
-                        {
-                            "label": {
-                                "en-GB": "Home"
-                            },
-                            "page": {
-                                "en-GB": "/"
-                            },
-                            "id": ""
-                        }
-                    ],
-                    "label": {
-                        "en-GB": "Link"
+                "title": {
+                    "value": {
+                        "en-GB": "Stark Project – A project for Frontender"
                     },
-                    "control": "core/route",
-                    "repeatable": "true"
+                    "label": {
+                        "en-GB": "Title"
+                    },
+                    "control": "core/text"
+                },
+                "copyright": {
+                    "value": {
+                        "en-GB": "Feel free to copy and use this template."
+                    },
+                    "label": {
+                        "en-GB": "Lead paragraph"
+                    },
+                    "control": "core/textarea"
                 }
             }
         },
