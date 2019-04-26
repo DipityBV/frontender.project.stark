@@ -17,9 +17,16 @@
     <h1>{{ 'site title'|i18n }}</h1>
     {% if links.links|length %}
     <nav>
-        {% for link in links.links %}
-            // Link
-        {% endfor %}
+        {% if 'http' in link.page|t %}
+            <a {{ helper.class_attribute({}, config.anchor_class)|raw }} target="_blank" href="{{ link.page|t }}">{{ link.label|t }}</a>
+        {% else %}
+            {% set route = link.id ? route({'page': link.page|t, 'slug': link.slug|default(link.page), 'id': link.id}) : route({'page': link.page|t})  %}
+            <a href="{{ route }}">{{ link.label|t }}</a>
+        {% endif %}
+        
     <nav>
     {% endfor %}
 </{{ config.container_tag|default('div') }}>
+
+
+
