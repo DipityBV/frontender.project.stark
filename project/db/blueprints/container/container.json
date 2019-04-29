@@ -44,6 +44,7 @@
                     },
                     "control": "core/markdown",
                     "at_least": 1,
+                    "at_most": 5,
                     "repeatable": true
                 }
             }

@@ -174,7 +174,8 @@
                                 "en-GB": "Paragraph"
                             },
                             "control": "core/markdown",
-                            "minimal": 1,
+                            "at_least": 1,
+                            "at_most": 5,
                             "repeatable": true
                         }
                     }
