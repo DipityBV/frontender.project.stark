@@ -1,7 +1,5 @@
 {
-	"route": {
-		"en-GB": "maintenance"
-	},
+	"route": "maintenance",
 	"frontender": "1556281216",
 	"template": "stark/layouts/default.html.twig",
 	"name": {
