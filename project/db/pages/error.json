@@ -1,7 +1,5 @@
 {
-	"route": {
-		"en-GB": "404"
-	},
+	"route": "en-GB": "404",
 	"frontender": "1556281216",
 	"template": "stark/layouts/default.html.twig",
 	"name": {
