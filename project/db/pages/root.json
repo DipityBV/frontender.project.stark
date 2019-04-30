@@ -1,7 +1,5 @@
 {
-	"route": {
-		"en-GB": "/"
-	},
+	"route": "/",
 	"frontender": "1556281216",
 	"template": "stark/layouts/default.html.twig",
 	"name": {
