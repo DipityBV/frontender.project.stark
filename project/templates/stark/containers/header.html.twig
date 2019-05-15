@@ -16,14 +16,15 @@
 <{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
     <h1>{{ 'site title'|i18n }}</h1>
     {% if links.links|length %}
-    <nav>
-        {% if 'http' in link.page|t %}
-            <a {{ helper.class_attribute({}, config.anchor_class)|raw }} target="_blank" href="{{ link.page|t }}">{{ link.label|t }}</a>
-        {% else %}
-            {% set route = link.id ? route({'page': link.page|t, 'slug': link.slug|default(link.page), 'id': link.id}) : route({'page': link.page|t})  %}
-            <a href="{{ route }}">{{ link.label|t }}</a>
-        {% endif %}
-
-    <nav>
+        <nav>
+            {% for link in links.links %}
+                {% if 'http' in link.page|t %}
+                    <a {{ helper.class_attribute({}, config.anchor_class)|raw }} target="_blank" href="{{ link.page|t }}">{{ link.label|t }}</a>
+                {% else %}
+                    {% set route = link.id ? route({'page': link.page|t, 'slug': link.slug|default(link.page), 'id': link.id}) : route({'page': link.page|t})  %}
+                    <a href="{{ route }}">{{ link.label|t }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
     {% endif %}
 </{{ config.container_tag|default('div') }}>
