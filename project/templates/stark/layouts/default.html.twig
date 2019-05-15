@@ -13,8 +13,6 @@
 
 {% extends 'stark/layouts/base.html.twig' %}
 
-{{ '/assets/styles/base.css'|addStyle('styles') }}
-{{ '/assets/scripts/sample.js'|addScript('beforeBodyEnd') }}
 
 {% block title %}
     <title>{{ page_config.seo.controls.title.value|t }}</title>
@@ -31,7 +29,9 @@
 {% endblock %}
 
 {% block scripts %}
+{{ '/assets/scripts/sample.js'|addScript('beforeBodyEnd') }}
 {% endblock %}
 
 {% block stylesheets %}
+{{ '/assets/styles/base.css'|addStyle('styles') }}
 {% endblock %}
