@@ -14,5 +14,5 @@
 {% import "macros/template.html.twig" as helper %}
 
 <{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    <p>{{ 'Copyright © 2017 - %s %s.'|format('now'|date('Y'), content.title) }} {{ content.copyright|t }}</p>
+    <p>{{ 'Copyright © 2017 - %s %s.'|format('now'|date('Y'), content.title|t) }} {{ content.copyright|t }}</p>
 </{{ config.container_tag|default('div') }}>
