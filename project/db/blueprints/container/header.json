@@ -1,5 +1,5 @@
 {
-    "template": "stark/containers/footer.html.twig",
+    "template": "stark/containers/header.html.twig",
     "name": {
         "en-GB": "Header"
     },

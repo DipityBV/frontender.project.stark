@@ -79,7 +79,7 @@
 	"containers": [
 		{
             "frontender": "1556283980",
-	        "template": "stark/containers/footer.html.twig",
+	        "template": "stark/containers/header.html.twig",
             "name": {
                 "en-GB": "Header"
             },
