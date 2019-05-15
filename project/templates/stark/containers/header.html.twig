@@ -23,10 +23,7 @@
             {% set route = link.id ? route({'page': link.page|t, 'slug': link.slug|default(link.page), 'id': link.id}) : route({'page': link.page|t})  %}
             <a href="{{ route }}">{{ link.label|t }}</a>
         {% endif %}
-        
+
     <nav>
-    {% endfor %}
+    {% endif %}
 </{{ config.container_tag|default('div') }}>
-
-
-

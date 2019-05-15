@@ -15,5 +15,5 @@
 {{ '/stark/containers/container/container.css'|addStyle('styles') }}
 
 <{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    {{ dump(container) }}
+    <pre>{{ dump(container) }}</pre>
 </{{ config.container_tag|default('div') }}>
