@@ -13,6 +13,11 @@
 
 {% extends 'stark/layouts/base.html.twig' %}
 
+{% block body %}
+    {% for container in containers %}
+        {% include container.template with container %}
+    {% endfor %}
+{% endblock %}
 
 {% block title %}
     <title>{{ page_config.seo.controls.title.value|t }}</title>
