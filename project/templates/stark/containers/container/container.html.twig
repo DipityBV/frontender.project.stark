@@ -15,5 +15,5 @@
 {{ '/stark/containers/container/container.css'|addStyle('styles') }}
 
 <{{ config.container_tag|default('div') }} class="{{[config.container_class]|join('  |  ') }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    <pre>{{ dump(container) }}</pre>
+    I am a container. You can skin me to look nice, and give me some content.
 </{{ config.container_tag|default('div') }}>
